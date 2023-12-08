@@ -6,6 +6,9 @@ const {$sayHello, $calculate} = useNuxtApp()
 $sayHello('Andrew')
 const aaa = $calculate(4, 345345)
 const bbb = 30
+
+const response = await $fetch('/api/hello')
+console.log(response);
 </script>
 
 <template>
